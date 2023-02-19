@@ -8,5 +8,9 @@ titleRef.textContent = "Anonymous";
 
 
 inputRef.addEventListener("input", (ever) => {
-   titleRef.textContent = ever.currentTarget.value;
+   if(ever.currentTarget.value === ""){
+     return titleRef.textContent = "Anonymous";
+  }
+   
+    titleRef.textContent = ever.currentTarget.value;
 });
