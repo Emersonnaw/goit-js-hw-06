@@ -24,9 +24,9 @@ const images = [
  
 
 const galleryRef = document.querySelector('.gallery');
-galleryRef.setAttribute('width', '780px');
+
  const createGallerySrcipt = images.map((image) => 
-`<li class = gallery__style>  <img src="${image.url}" alt="${image.alt}"></li>`
+`<li class = gallery__style>  <img src="${image.url}" alt="${image.alt}" width="1200"></li>`
  ).join(""); 
 
  galleryRef.insertAdjacentHTML('afterbegin', createGallerySrcipt);
